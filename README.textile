@@ -1,0 +1,35 @@
+h1. Glitter
+
+Glitter is a greasemonkey script that allows users to modify the look and feel of Twitter.
+
+---------------------------------------------------------------------------------------------------
+GLITTER IS STILL A WORK IN PROGRESS AND CURRENTLY DOES NOT BEHAVE OR LOOK THE WAY IT IS INTENDED TO
+---------------------------------------------------------------------------------------------------
+
+h2. Installation
+
+* In order to install glitter you need to be using the Firefox browser (v.3.5 is preferable) with the greasemonkey plugin (https://addons.mozilla.org/en-US/firefox/addon/748)
+* Before proceeding you need to ensure that greasemonkey is turned off by left clicking on its icon in the bottom right corner of your browser window (it should be greyed out)
+* Click on the glitter.user.js link inside the repository browser
+* Select the raw viewing option in the top right corner of the code window
+* Turn on greasemonkey by left clicking on its icon and it should autodetect the presence of the script
+* Allow greasemonkey to install the script and then proceed to log in to your twitter account as per normal.
+
+h2. Dependencies
+
+Glitter currently requires both firefox and greasemonkey in order to be run. Opera also supports the use of custom user scripts however Glitter has not been tested on the Opera browser.
+
+h2. Legal
+
+Copyright (c) 2009 Mateja Milosavljevic
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+
+
+--------------------------------
+THIS IS STILL A WORK IN PROGRESS
+--------------------------------
