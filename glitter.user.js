@@ -12,7 +12,7 @@
 	
 	// add custom style
 	var customStyle = document.createElement('link');
-    customStyle.href = 'http://mmilolabs.com/twitter/svelte/style.css';
+    customStyle.href = 'http://mammil.com/glitter/themes/svelte/style.css';
 	customStyle.type = 'text/css';
 	customStyle.rel = 'stylesheet';
 	customStyle.id = 'customStyle';
@@ -23,7 +23,7 @@
 	// add custom script
 	function addScript() {
 		var customScript = document.createElement('script');
-		customScript.src = 'http://mmilolabs.com/twitter/svelte/script.js';
+		customScript.src = 'http://mammil.com/glitter/themes/svelte/script.js';
 		customScript.type = 'text/javascript';
 		customScript.id = 'customScript';
 		docBody.appendChild(customScript);

@@ -1,3 +1,8 @@
+/* -----------------------------------
+SVELTE THEME FOR GLITTER
+Coyright 2009(c) Matt Milosavljevic
+-----------------------------------*/
+
 /* meyer's style reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -22,14 +27,15 @@ body 		{ font-family:calibri,helvetica,arial,sans-serif;color:#333;background:#e
 a 			{ color:#0072bc;text-decoration:none; }
 a:hover 		{ color:#df4f37; }
 
-/* layout modifications (this is svelte specific) */
+/* layout modifications */
 #timeline				{ clear:both;width:500px; }	
 #container		 		{ position:relative;left:45%;width:auto;float:left; }
 .offscreen 				{ position:absolute;left:-9999px; }
 .columns 				{ position:relative;left:-50%; }
-#side_base				{ position:absolute;margin:-310px 0 0 2em;width:250px;background:url(side_arrow.gif) 25px center no-repeat; }
+#side_base				{ position:absolute;margin:-310px 0 0 2em;padding-right:15px;background:url(side_arrow.gif) 25px center no-repeat; }
 #side_wrap				{ padding-top:80px;background:url(side.gif) top left no-repeat;width:20px;overflow:hidden; }
-#content 				{ margin-left:-50%;padding-top:215px; }
+#content 				{ margin-left:-50%; }
+.section				{ margin-top:160px; }
 #header, #footer		{ position:absolute;display:none; }
 
 #side {padding:0 1em 79px 1em;background:url(side.gif) bottom left no-repeat; }
@@ -62,7 +68,7 @@ a:hover 		{ color:#df4f37; }
 
 
 
-.timeline #profile 								{ position:relative;z-index:2;top:-80px;}
+.timeline #profile 								{ position:relative;z-index:2;top:-30px;}
 .timeline #profile .user_icon, #profile .stats 	{ float:left;clear:left;}
 .timeline #profile .user_icon 					{ background:url(me_talk.gif) right -40px no-repeat;padding:20px 75px 0 0;}
 #me_name 										{ text-transform:uppercase; }
@@ -112,25 +118,25 @@ a:hover 		{ color:#df4f37; }
 #latest_text_full { display:none !important; }
 
 
-.hentry 							{ position:relative;margin-bottom:1em;padding-top:1em;overflow:visible;width:inherit; }
-#timeline .thumb 				{ position:absolute;bottom:0;left:0;clear:both;height:48px;border:4px solid #fafafa; }
+.hentry 							{ position:relative;margin-bottom:1em;padding-top:1em;width:inherit; }
+#timeline .thumb 				{ position:absolute;bottom:0;left:0;height:48px;border:4px solid #fafafa; }
 .thumb img						{ width:48px;height:48px; }
 .status-body 					{ background:url(me_talk.gif) bottom left no-repeat;margin-left:4em;display:block;min-height:1em;padding-bottom:1em; }
 #profile .status-body			{ margin-left:0; }
-.hentry:hover .entry-meta		{ visibility:visible; }
+.hentry:hover .entry-meta		{ opacity:1; }
 .hentry strong:after	 			{ content:" said" }
 #sent .hentry strong:after	 		{ content:"" }
 #sent .hentry strong:before		{ content:"you said to " }
 #sent .lock, #inbox .lock		{ display:none; }
 .entry-content, .msgtxt 			{ background:#fafafa;display:block;padding:1em; }
-.entry-meta, .status-body .meta	{ position:absolute;bottom:0;display:block;visibility:hidden;font-size:.8em;right:5px; }
+.entry-meta, .status-body .meta	{ position:absolute;bottom:0;display:block;opacity:.1;font-size:.8em;right:5px; }
 
 
-.actions				{ position:absolute;height:1em;top:-.5em;right:0;padding:.25em;display:block;visibility:hidden; }
+.actions				{ position:absolute;height:1em;top:-.5em;right:0;padding:.25em;display:block;opacity:.2; }
 #profile .actions		{ left:0; }
-.hentry strong			{ position:absolute;top:0;margin-left:1.25em;font-size:.8em;visibility:hidden;font-weight:normal; }
-.hentry:hover strong 		{ visibility:visible; }
-.hentry:hover .actions	{ visibility:visible; }
+.hentry strong			{ position:absolute;top:0;margin-left:1.25em;font-size:.8em;opacity:.1;font-weight:normal; }
+.hentry:hover strong 		{ opacity:1; }
+.hentry:hover .actions	{ opacity:1; }
 .actions div a			{ background:url(entry_actions.gif) no-repeat;cursor:pointer;border-left:1px solid #aaa;display:block;float:left;width:20px;height:13px; }
 .actions div				{ position:absolute;right:5px;top:.4em; }
 .actions a.fav-action	{ background-position:0 1px;border-left:0; }
@@ -144,12 +150,13 @@ a:hover 		{ color:#df4f37; }
 .definition strong { display:block;font-weight:normal;color:#0072bc; }
 .definition:hover strong { color:#df4f37; }
 
-#more				{ display:block;font-weight:bold;color:#777;background:#e2e2e2;text-align:center;padding:10px 0;margin:50px 0;font-size:.8em; }
-#more:hover			{ background:#444;color:#eee; }
-#timeline_heading	{ border-bottom:1px solid #ccc;border-top:1px solid #ccc;clear:both;overflow:auto;padding:10px 0 13px;margin-bottom:30px; }
-#timeline_heading h1	{ float:left;padding-right:10px;margin-right:10px;color:#aaa;font-weight:normal; }
+#more				{ display:block;font-weight:bold;color:#777;background:#f0f0f1;text-align:center;padding:10px 0;margin:50px 0;font-size:.8em;border:1px solid #ddd;border-bottom:2px solid #d2d2d2;-moz-border-radius:5px; }
+#more:hover			{ background:#f2f2f2;color:#777; }
+#timeline_heading	{ font-size:.8em;border-bottom:1px solid #ccc;border-top:1px solid #ccc;clear:both;overflow:auto;padding:10px 0 13px;margin-bottom:30px; }
+#timeline_heading h1	{ float:left;padding-right:10px;margin-right:10px;color:#888;text-transform:uppercase;font-family:gotham,helvetica,arial,sans-serif; }
 #timeline_heading ul	{ float:right; }
-#timeline_heading li	{ float:left; }
+#timeline_heading li	{ float:left;text-transform:lowercase;margin-left:5px; }
+#sent_tab			{ border-left:1px solid #bbb;padding-left:5px; }
 
 
 #front * 			{ visibility:hidden; }
