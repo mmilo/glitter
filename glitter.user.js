@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name			cleantwitter
+// @name			glitter
 // @namespace		matt
-// @description		a clean version of twitter
+// @description		a script for adding custom themes and features to twitter
 // @include			http://twitter.com/
 // @include			http://twitter.com/*
 // @require			http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js

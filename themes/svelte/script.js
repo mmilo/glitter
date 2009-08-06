@@ -21,7 +21,7 @@ refreshTimeline();
 
 // this moves the ellipsis into the status message when it's length exceeds 140 chars
 // TODO - need to find more efficient way of doing this, this fires too many times
-$('#timeline').bind('DOMNodeInserted', function() { 
+$('#timeline').bind('DOMSubtreeModified', function() { 
 	$.each($('.entry-content'), function() {
 		$(this).append($(this).siblings('a'));
 	});
@@ -31,18 +31,23 @@ $('#timeline').bind('DOMNodeInserted', function() {
 $('#side_base').hover(
 	function() {
 		$('#side_base').css('width','250px');
-		$('#side_wrap').stop().animate({"width": "250px"}, 250);
+		$('#side_wrap').stop().animate({'width': '250px'}, 200);
 	},
 	function() {
-		$('#side_wrap').stop().animate({"width": "17px"}, 250);
+		$('#side_wrap').stop().animate({'width': '17px'}, 200);
 		$('#side_base').css('width','auto');
 	}
 );
 
 function refreshTimeline() {
 	// ensure autorefreshing only occurs for your timeline
-	if((window.location.hash == '' || '#home') && (window.location.pathname == "/")) {
-		$('#timeline').load("/ #timeline li");
+	
+	if(window.location.hash == '' || window.location.hash == '#home') {
+		if(window.location.pathname == '/') {
+			var currDate = new Date();
+			currDate.toLocaleTimeString();
+			$('#timeline').load("/ #timeline li");
+		}
 	}
 	// be polite to twitter and don't refresh the page more than 2 times a minute
 	window.setTimeout(refreshTimeline,30000);
