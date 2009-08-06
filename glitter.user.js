@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name			glitter
-// @namespace		matt
-// @description		a script for adding custom themes and features to twitter
+// @name			Glitter
+// @namespace		http://mammil.com
+// @description		Glitter is a greasemonkey script that allows users to modify the look and feel of Twitter.
 // @include			http://twitter.com/
 // @include			http://twitter.com/*
 // @require			http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js
@@ -17,8 +17,6 @@
 	customStyle.rel = 'stylesheet';
 	customStyle.id = 'customStyle';
     docHead.appendChild(customStyle);
-	
-	window.setTimeout(addScript,1500); 
 	
 	// add custom script
 	function addScript() {
